@@ -3,9 +3,13 @@ package net.deep.shoppingbackend.daoimpl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+import net.deep.shoppingbackend.dao.CategoryDAO;
 import net.deep.shoppingbackend.dto.Category;
 
-public class CategoryDAO implements net.deep.shoppingbackend.dao.CategoryDAO {
+@Repository("categoryDAO")
+public class CategoryDAOImpl implements CategoryDAO {
 
 	private static List<Category> categories = new ArrayList<>();
 
