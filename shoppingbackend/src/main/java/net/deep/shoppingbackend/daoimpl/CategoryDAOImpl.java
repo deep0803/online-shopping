@@ -18,23 +18,23 @@ public class CategoryDAOImpl implements CategoryDAO {
 		// adding first category
 		Category category = new Category();
 		category.setId(1);
-		category.setName("TEST CAT");
-		category.setDescription("TEST DESC");
-		category.setImageURL("TEST_URL");
+		category.setName("Mobile");
+		category.setDescription("TEST DESC1");
+		category.setImageURL("TEST_URL1");
 		categories.add(category);
 
 		// adding second category
-
+		 category = new Category();
 		category.setId(2);
-		category.setName("TEST CAT2");
+		category.setName("Television");
 		category.setDescription("TEST DESC2");
 		category.setImageURL("TEST_URL2");
 		categories.add(category);
 
 		// adding third category
-
+		category = new Category();
 		category.setId(3);
-		category.setName("TEST CAT3");
+		category.setName("LAPTOP");
 		category.setDescription("TEST DESC3");
 		category.setImageURL("TEST_URL3");
 		categories.add(category);
@@ -43,6 +43,15 @@ public class CategoryDAOImpl implements CategoryDAO {
 	@Override
 	public List<Category> list() {
 		return categories;
+	}
+
+	@Override
+	public Category get(int id) {
+		//enhanced for loop
+		for(Category category:categories){
+			if(category.getId()==id)return category;
+		}
+		return null;
 	}
 
 }
