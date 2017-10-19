@@ -8,3 +8,4 @@ is_active boolean,
 CONSTRAINT pk_cateogry_id PRIMARY KEY(id)
 
 );
+
