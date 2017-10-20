@@ -78,7 +78,7 @@ public class CategoryTestCase {
 			category.setDescription("This is some description for laptop!");
 			category.setImageURL("CAT_105.png");
 	
-			assertEquals("Successfully added a category inside the table!", true, categoryDAO.add(category));
+			assertEquals("Something Went Wrong while inserting cat!", true, categoryDAO.add(category));
 			
 			category = new Category();
 	
@@ -86,7 +86,7 @@ public class CategoryTestCase {
 			category.setDescription("This is some description for Television!");
 			category.setImageURL("CAT_106.png");
 	
-			assertEquals("Successfully added a category inside the table!", true, categoryDAO.add(category));
+			assertEquals("Something Went Wrong while inserting cat!!", true, categoryDAO.add(category));
 			
 			category = new Category();
 	
@@ -94,7 +94,7 @@ public class CategoryTestCase {
 			category.setDescription("This is some description for Mobile!");
 			category.setImageURL("CAT_107.png");
 	
-			assertEquals("Successfully added a category inside the table!", true, categoryDAO.add(category));
+			assertEquals("Something Went Wrong while inserting cat!!", true, categoryDAO.add(category));
 			
 			category = new Category();
 	
@@ -102,19 +102,19 @@ public class CategoryTestCase {
 			category.setDescription("This is some description for Camera!");
 			category.setImageURL("CAT_108.png");
 	
-			assertEquals("Successfully added a category inside the table!", true, categoryDAO.add(category));
+			assertEquals("Something Went Wrong while inserting cat!!", true, categoryDAO.add(category));
 		
 		//Test case for fetching and updating the record into the table
 			category=categoryDAO.get(2);
 			category.setName("TV");
-			assertEquals("Successfully updated a category in the table!", true, categoryDAO.update(category));
+			assertEquals("Something Went Wrong while updating !", true, categoryDAO.update(category));
 			
 		//Test case for deleting the category from the table
 			
-			assertEquals("Successfully updated a category in the table!", true, categoryDAO.delete(category));
+			assertEquals("Something Went Wrong while deleting !", true, categoryDAO.delete(category));
 		
 		//Test case for getting the list of categories
-			assertEquals("Successfully fetched the list of categories in the table!", 3, categoryDAO.list().size());
+			assertEquals("Something Went Wrong while fetching list!", 3, categoryDAO.list().size());
 			
 	}
 }
