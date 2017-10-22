@@ -26,6 +26,9 @@
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 <link href="${css}/bootstrap.readable.css" rel="stylesheet">
 
+<!-- Bootstrap Datatable theme -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
 
@@ -61,6 +64,9 @@
 		<script src="${js}/jquery.js"></script>
 		<script src="${js}/popper.js"></script>
 		<script src="${js}/bootstrap.min.js"></script>
+		<script src="${js}/jquery.dataTables.js"></script>
+		<!-- DAtatable bootstrap script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
 		<script src="${js}/myapp.js"></script>
 	</div>
 </body>
