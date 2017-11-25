@@ -8,6 +8,7 @@
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 <script type="text/javascript">
 	window.menu = "${title}";
+	window.contextRoot="${contextRoot}"
 </script>
 <!DOCTYPE html>
 <html lang="en">
